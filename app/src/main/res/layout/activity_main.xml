@@ -7,28 +7,53 @@
     tools:context=".MainActivity">
 
 
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="374dp"
+        android:layout_height="156dp"
+        android:src="@drawable/ic_mytinerary_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.101"
-        app:srcCompat="@drawable/mytinerarylogo2" />
+        app:layout_constraintVertical_bias="0.027" />
 
-    <Button
-        android:id="@+id/button"
+    <ImageView
+        android:id="@+id/btnSerchCities"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:src="@drawable/circled_right_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="107dp"
+        android:layout_height="18dp"
+        android:text="Please Log in or "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSerchCities"
+        app:layout_constraintVertical_bias="0.916" />
+
+    <TextView
+        android:id="@+id/clickableText"
+        android:layout_width="139dp"
+        android:layout_height="17dp"
+        android:text="Creeate an Account."
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSerchCities"
+        app:layout_constraintVertical_bias="0.916" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
