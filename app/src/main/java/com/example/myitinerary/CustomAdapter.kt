@@ -47,7 +47,6 @@ class CustomAdapter(var context: Context, var city: ArrayList<City>) : BaseAdapt
         Picasso.get().load(city.image).fit().into(viewHolder.imgCity)
         viewHolder.imgCity.setOnClickListener(object: View.OnClickListener {
             override fun onClick(v: View?) {
-                //val intent = Intent( context, ItineraryActivity::class.java)
                 val intent = Intent( context, MapsActivity::class.java)
                 intent.putExtra("cityName", city.name)
                 startActivity(context, intent, Bundle())

@@ -36,138 +36,369 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap
 
-        when(intent.getStringExtra("cityName")) {
-            "Buenos Aires" -> {val cityLoc = LatLng(-34.612918, -58.373569)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+        when (intent.getStringExtra("cityName")) {
+            "Buenos Aires" -> {
+                val cityLoc = LatLng(-34.612918, -58.373569)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Oslo" -> {val cityLoc = LatLng(59.913902, 10.752923)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Oslo" -> {
+                val cityLoc = LatLng(59.913902, 10.752923)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Tlön" -> {val cityLoc = LatLng(25.630716, 91.155004)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Tlön" -> {
+                val cityLoc = LatLng(25.630716, 91.155004)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "London" -> {val cityLoc = LatLng(51.509294, -0.123089)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "London" -> {
+                val cityLoc = LatLng(51.509294, -0.123089)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Berlin" -> {val cityLoc = LatLng(52.518945, 13.411311)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Berlin" -> {
+                val cityLoc = LatLng(52.518945, 13.411311)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Madrid" -> {val cityLoc = LatLng(40.415655, -3.704352)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Madrid" -> {
+                val cityLoc = LatLng(40.415655, -3.704352)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Rome" -> {val cityLoc = LatLng(41.892290, 12.492815)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Rome" -> {
+                val cityLoc = LatLng(41.892290, 12.492815)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Paris" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Paris" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Bucharest" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Bucharest" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Budapest" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Budapest" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Warsaw" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Warsaw" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Belgrade" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Belgrade" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Vienna" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Vienna" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Milan" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Milan" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Munich" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Munich" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Prague" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Prague" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Sofia" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Sofia" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Napoli" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Napoli" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Stockholm" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Stockholm" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Helsinki" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Helsinki" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Copenhagen" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Copenhagen" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Montevideo" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Montevideo" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Amsterdam" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Amsterdam" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "New York" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "New York" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Barcelona" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Barcelona" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Mexico City" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Mexico City" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Athens" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Athens" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Tokyo" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Tokyo" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Rio" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Rio" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Dublin" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Dublin" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Cartagena" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Cartagena" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
-            "Asuncion" -> {val cityLoc = LatLng(48.873007, 2.348188)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            "Asuncion" -> {
+                val cityLoc = LatLng(48.873007, 2.348188)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
 
-            else -> {val cityLoc = LatLng(-34.0, 151.0)
-                map.addMarker(MarkerOptions().position(cityLoc).title("Marker in " + intent.getStringExtra("cityName")))
+            else -> {
+                val cityLoc = LatLng(-34.0, 151.0)
+                map.addMarker(
+                    MarkerOptions().position(cityLoc).title(
+                        "Marker in " + intent.getStringExtra(
+                            "cityName"
+                        )
+                    )
+                )
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(cityLoc, 12.0f))
             }
         }
