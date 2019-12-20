@@ -6,7 +6,7 @@
 
     <ImageView
         android:id="@+id/imgCity"
-        android:layout_width="382dp"
+        android:layout_width="wrap_content"
         android:layout_height="161dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -14,15 +14,33 @@
         android:layout_alignParentRight="true"
         android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
         android:src="@drawable/default_user" />
+
+    <View
+        android:id="@+id/viewSep"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignTop="@+id/imgCity"
+        android:layout_alignBottom="@+id/imgCity"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="64dp"
+        android:background="#41D5D5D5" />
 
     <TextView
         android:id="@+id/txtName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="157dp"
         android:layout_alignLeft="@id/imgCity"
         android:layout_alignTop="@id/imgCity"
@@ -36,7 +54,7 @@
         android:layout_marginBottom="1dp"
         android:gravity="center"
         android:text="Hello"
-        android:textColor="#000000" />
-
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 
 </RelativeLayout>
